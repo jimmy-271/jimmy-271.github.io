@@ -106,7 +106,11 @@
         gap: 10px;
       }
 
-      button {
+      button,
+      .link-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
         min-height: 42px;
         border: 1px solid #b7c2d8;
         border-radius: 7px;
@@ -115,9 +119,11 @@
         font-size: 14px;
         font-weight: 650;
         padding: 0 14px;
+        text-decoration: none;
       }
 
-      button.primary {
+      button.primary,
+      .link-button.primary {
         border-color: #1f5ed7;
         background: #1f5ed7;
         color: #ffffff;
@@ -257,6 +263,7 @@
           <button id="firebaseButton" type="button">检查 Firebase isSupported()</button>
           <button id="permissionButton" type="button">读取通知权限</button>
           <button id="copyButton" type="button">复制结果 JSON</button>
+          <a class="link-button" href="./open_window_test.html">打开 window.open 测试</a>
         </div>
       </section>
 
